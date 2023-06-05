@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Generador Qr</title>
+
+</head>
+
+<body>
+    <h2>¿Cómo se creó el generador de Qr?</h2>
+
+    <p>le indique a chat gpt que cree un generador de Qr con la opción de dar click cada vez que se quiera generar un
+        nuevo Qr
+        y para guardar el Qr, después de eso separé los botones por 1mm junto con la imágen, la fuente de la letra
+        decidí ponerle
+        en calibri y el tamaño en 12, la imágen de la caja lo coloque en 10 y el borde en 4, la ventana de la aplicacion
+        lo decidí
+        poner en 450x550.
+    </p>
+   
+
+    <h3>Explicación</h3>
+
+    <p>Este código en Python utiliza la biblioteca 'qrcode' y la interfaz gráfica de usuario 'tkinter' para crear una aplicación de
+    generador de códigos QR. Aquí está el detalle del código:</p>
+        <ol>
+            <b><li>Importación de bibliotecas:</li></b>
+        
+        
+    
+    <img src="imagenes/numero 1.png" alt="import qrcode//import tkinter as tk//from tkinter import filedialog//from PIL import ImageTk, Image">
+
+            <ul>
+                <li>'qrcode': Biblioteca para generar códigos QR.</li>
+                <li>'tkinter': Biblioteca para crear la interfaz gráfica de usuario.</li>
+                <li>'filedialog': Submódulo de 'tkinter' para abrir el cuadro de diálogo de guardar archivo.</li>
+                <li>'ImageTk, Image' de la biblioteca PIL (Python Imaging Library): Para convertir la imagen del código QR a un formato
+                compatible con Tkinter y mostrarla en la ventana.</li>
+            </ul>
+
+        
+            <b><li>Definición de funciones:</li></b>
+                <ul>
+                    <li>'generar_qr()': Esta función se llama cuando se presiona el botón "Generar QR". Obtiene el texto o URL del campo de
+                    entrada, genera el código QR utilizando la biblioteca 'qrcode,' crea la imagen del código QR, la convierte a un formato
+                    compatible con Tkinter y la muestra en la ventana.</li>
+                    <li>'guardar_qr()': Esta función se llama cuando se presiona el botón "Guardar QR". Obtiene el texto o URL del campo de
+                    entrada, genera el código QR, crea la imagen del código QR, abre el cuadro de diálogo de guardar archivo, guarda la
+                    imagen del código QR en un archivo si se selecciona un archivo válido.</li>
+
+                </ul>
+
+               <b><li>Creación de la ventana de la aplicación:</li></b>
+       
+                <img src="imagenes/numero 3.png" alt="">
+
+                <ul>
+                    <li>Se crea una nueva ventana con un título y se establece su tamaño. </li>
+                </ul>
+                
+                <b><li>Etiqueta y campo de entrada:</li></b>
+
+                <img src="imagenes/numero 4.png" alt="">
+
+                <ul>
+                    <li>Se crea una etiqueta de texto para indicar al usuario que coloque un texto o URL.</li>
+                    <li>Se crea un campo de entrada donde el usuario puede escribir el texto o URL.</li>
+                </ul>
+
+                    <b><li>Botones "Generar QR" y "Guardar QR":</li></b>
+                
+                    <img src="imagenes/numero 5.png" alt="">
+
+                <ul>
+                    <li>Se crean dos botones: "Generar QR" y "Guardar QR".</li>
+                    <li>El botón "Generar QR" llama a la función 'generar_qr()' cuando se presiona.</li>
+                    <li>El botón "Guardar QR" llama a la función 'guardar_qr()' cuando se presiona.</li>
+                    <li>Se establece el color de fondo ('bg') y el color del texto ('fg') de los botones.</li>
+                    <li>Se establece la fuente ('font') de los botones.</li>
+                </ul>
+
+                    <b><li>Etiqueta para mostrar la imagen del código QR:</li></b>
+
+                    <img src="imagenes/numero 6.png" alt="">
+
+                    <ul>
+                        <li>Se crea una etiqueta donde se mostrará la imagen del código</li>
+                    </ul>
+
+        </ol>
+
+    <p>En conclución lo que me dio chat gpt fue el 98% lo que el escribio en eso me enfoque en
+        investicar mas todo lo que escribio para yo entenderlo y analizarlo con claridad, en resumen
+        chat gpt te da la base para que tu mismo modifiques y crees tu mismo tu propia aplicación.</p>
+    <p><b>Nota:</b> esto es una práctica para ver como esta echo la página y como esta echo la aplicación.</p>
+
+</body>
+
+</html>
